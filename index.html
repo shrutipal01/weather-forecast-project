@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>weather forecast project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/19c6e3ae6b.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="card">
-        <div class="search"></div>
-        <input type="text" placeholder="enter city name" spellcheck="false">
-        <button><img src="WhatsApp Image 2024-05-20 at 10.51.33 (2).jpeg"></button>
-    </div>
-    <div class="error">
-    </div>
-    <div class="weather">
-        <img class="weather-icon" src="WhatsApp Image 2024-05-20 at 10.51.33 (1).jpeg">
-        <h1 class="temp">22c</h1>
-        <h2 class="city">London</h2>
-        </div>
-        <div class="details">
-            <div class="col">
-                <img src="WhatsApp Image 2024-05-20 at 10.51.35.jpeg">
+        <div class="header">
+            <div class="search">
+                <input type="text" placeholder="enter city name" spellcheck="false">
+                <button class="fa-solid fa-magnifying-glass"></button>
+            </div>
+            <div class="error">
+                <p>INVALID CITY NAME</p>
+            </div>
+            <div class="weather">
+                <img class="weather-icon" src="images/rainy.jpeg">
+                <h1 class="temp">22°c</h1>
+                <h2 class="city">London</h2>
+            </div>
+            <div class="details">
+                <div class="col">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>humidity</p>
+                    </div>
+                </div>
+                <div class="col"></div>
+                <i class="fa-solid fa-wind"></i>
                 <div>
-                    <p class="humidity">50%</p>
-                    <p>humidity</p>
+                    <p class="wind">15 km/h</p>
+                    <p>wind</p>
                 </div>
             </div>
-            <div class="col"></div>
-            <img src="WhatsApp Image 2024-05-20 at 10.51.34 (1).jpeg">
-                <div>
-                    <p class="wind">15</p>
-                    <p>humidity</p>
         </div>
-        </div>
-    </div>
 
-    <script scr="script.js"></script>
+        <script src="script.js"></script>
 </body>
+
 </html>
